@@ -927,7 +927,8 @@ XavierInit: gain=1, distribution=uniform, bias=0
 2023/05/13 23:43:53 - mmengine - WARNING - "FileClient" will be deprecated in future. Please use io functions in https://mmengine.readthedocs.io/en/latest/api/fileio.html#file-io
 2023/05/13 23:43:53 - mmengine - WARNING - "HardDiskBackend" is the alias of "LocalBackend" and the former will be deprecated in future.
 2023/05/13 23:43:53 - mmengine - INFO - Checkpoints will be saved to C:\Users\PC\mmdetection\work_dirs\faster-rcnn_r50_fpn_1x_voc0712 copy.
-2023/05/13 23:54:30 - mmengine - INFO - Epoch(train) [1][50/59]  lr: 1.0000e-02  eta: 0:01:54  time: 12.7322  data_time: 0.1156  loss: 0.4129  loss_rpn_cls: 0.0770  loss_rpn_bbox: 0.0111  loss_cls: 0.2328  acc: 97.8516  loss_bbox: 0.0920
+2023/05/13 23:54:30 - mmengine - INFO - Epoch(train) [1][50/59]  lr: 1.0000e-02  eta: 0:01:54  time: 12.7322  data_time: 0.1156  loss: 0.4129  loss_rpn_cls: 0.0770  
+loss_rpn_bbox: 0.0111  loss_cls: 0.2328  acc: 97.8516  loss_bbox: 0.0920
 2023/05/13 23:55:52 - mmengine - INFO - Exp name: faster-rcnn_r50_fpn_1x_voc0712 copy_20230513_234344
 2023/05/13 23:55:52 - mmengine - INFO - Saving checkpoint at 1 epochs
 2023/05/13 23:56:43 - mmengine - INFO - 
