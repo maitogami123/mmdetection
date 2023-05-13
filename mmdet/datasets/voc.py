@@ -25,7 +25,5 @@ class VOCDataset(XMLDataset):
         super().__init__(**kwargs)
         if 'VOC2007' in self.sub_data_root:
             self._metainfo['dataset_type'] = 'VOC2007'
-        elif 'VOC2012' in self.sub_data_root:
-            self._metainfo['dataset_type'] = 'VOC2012'
         else:
             self._metainfo['dataset_type'] = None

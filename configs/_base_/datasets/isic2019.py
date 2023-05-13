@@ -1,6 +1,6 @@
 # dataset settings
-dataset_type = 'VOCDataset'
-data_root = 'data/VOCdevkit/'
+dataset_type = 'ISIC2019DataSet'
+data_root = 'data/'
 
 # Example to use different file client
 # Method 1: simply set the data root and let the file I/O module
@@ -54,8 +54,8 @@ train_dataloader = dict(
                 dict(
                     type=dataset_type,
                     data_root=data_root,
-                    ann_file='VOC2007/ImageSets/Main/trainval.txt',
-                    data_prefix=dict(sub_data_root='VOC2007/'),
+                    ann_file='ISIC/ImageSets/Main/trainval.txt',
+                    data_prefix=dict(sub_data_root='ISIC/'),
                     filter_cfg=dict(
                         filter_empty_gt=True, min_size=32, bbox_min_size=32),
                     pipeline=train_pipeline,
@@ -71,14 +71,12 @@ val_dataloader = dict(
     dataset=dict(
         type=dataset_type,
         data_root=data_root,
-        ann_file='VOC2007/ImageSets/Main/test.txt',
-        data_prefix=dict(sub_data_root='VOC2007/'),
+        ann_file='ISIC/ImageSets/Main/test.txt',
+        data_prefix=dict(sub_data_root='ISIC/'),
         test_mode=True,
         pipeline=test_pipeline,
         backend_args=backend_args))
 test_dataloader = val_dataloader
 
-# Pascal VOC2007 uses `11points` as default evaluate mode, while PASCAL
-# VOC2012 defaults to use 'area'.
 val_evaluator = dict(type='VOCMetric', metric='mAP', eval_mode='11points')
 test_evaluator = val_evaluator

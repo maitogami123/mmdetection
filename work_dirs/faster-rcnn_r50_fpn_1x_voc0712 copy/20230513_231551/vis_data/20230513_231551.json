@@ -1,0 +1,2 @@
+{"lr": 0.01, "data_time": 0.11883296012878418, "loss": NaN, "loss_rpn_cls": NaN, "loss_rpn_bbox": NaN, "loss_cls": NaN, "acc": 50.0, "loss_bbox": NaN, "time": 15.1691224193573, "epoch": 1, "step": 50}
+{"pascal_voc/mAP": 0.0, "pascal_voc/AP50": 0.0, "data_time": 0.14988788691433994, "time": 1.27351036938754, "step": 1}

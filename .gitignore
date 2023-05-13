@@ -52,7 +52,6 @@ coverage.xml
 *.pot
 
 # Django stuff:
-*.log
 local_settings.py
 db.sqlite3
 
@@ -112,12 +111,14 @@ data
 # custom
 *.pkl
 *.pkl.json
-*.log.json
 docs/modelzoo_statistics.md
 mmdet/.mim
-work_dirs/
 
 # Pytorch
 *.pth
 *.py~
 *.sh~
+
+# checkpoint
+work_dirs\faster-rcnn_r50_fpn_1x_voc0712 copy\epoch_1.pth
+work_dirs\faster-rcnn_r50_fpn_1x_voc0712\epoch_1.pth
